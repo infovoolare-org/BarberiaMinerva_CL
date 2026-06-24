@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#080706" />
+
+  <!-- SEO -->
+  <title>Barberías Minerva | Barbería Premium — La Serena, Chile</title>
+  <meta name="description" content="Barberías Minerva: experiencia premium de barbería y spa capilar en La Serena. Fade profesional, tratamientos faciales, zona infantil. Agenda por WhatsApp." />
+  <meta name="keywords" content="barbería La Serena, fade profesional, corte de cabello, barbería infantil, spa capilar, Minerva" />
+  <meta name="author" content="Barberías Minerva" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Barberías Minerva | Barbería Premium" />
+  <meta property="og:description" content="Experiencia de barbería y spa capilar de alto nivel en La Serena. Agenda tu hora por WhatsApp." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/img/og-image.jpg" />
+
+  <!-- Favicon inline SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23080706'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='serif' font-size='20' fill='%23c8a84b'%3EM%3C/text%3E%3C/svg%3E" />
+
+  <!-- Fonts (embedded — no CDN needed for GitHub Pages) -->
+  <link rel="stylesheet" href="assets/fonts/fonts.css" />
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="loading">
+
+  <!-- ═══════════════════════════════════════════════
+       LOADER
+  ═══════════════════════════════════════════════ -->
+  <div id="loader" aria-hidden="true">
+    <div class="loader-emblem">
+      <svg viewBox="0 0 120 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="lg" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#f0d97a"/>
+            <stop offset="50%" stop-color="#c8a84b"/>
+            <stop offset="100%" stop-color="#a07830"/>
+          </linearGradient>
+        </defs>
+        <!-- Corona -->
+        <path d="M48 24L48 31L72 31L72 24" fill="url(#lg)"/>
+        <path d="M48 24L46 17L50 22L53 14L53 24Z" fill="url(#lg)"/>
+        <path d="M53 24L53 14L57 9L61 14L61 24Z" fill="url(#lg)" opacity="0.9"/>
+        <path d="M61 24L61 14L65 22L69 17L72 24Z" fill="url(#lg)"/>
+        <ellipse cx="51" cy="29" rx="2" ry="2" fill="url(#lg)"/>
+        <ellipse cx="57" cy="29" rx="2" ry="2" fill="url(#lg)"/>
+        <ellipse cx="60" cy="29" rx="2" ry="2" fill="url(#lg)"/>
+        <ellipse cx="63" cy="29" rx="2" ry="2" fill="url(#lg)"/>
+        <ellipse cx="69" cy="29" rx="2" ry="2" fill="url(#lg)"/>
+        <!-- M -->
+        <path d="M38 63L38 38L42 38L60 57L78 38L82 38L82 63L78 63L78 46L62 62L58 62L42 46L42 63Z" fill="url(#lg)"/>
+        <!-- Laurel izq -->
+        <path d="M38 55Q28 52 20 44" stroke="url(#lg)" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+        <path d="M38 55Q35 50 28 47Q31 54 38 55Z" fill="url(#lg)"/>
+        <path d="M35 52Q30 47 23 46Q27 52 35 52Z" fill="url(#lg)"/>
+        <path d="M31 49Q26 44 19 44Q23 50 31 49Z" fill="url(#lg)"/>
+        <path d="M38 57Q26 60 18 55" stroke="url(#lg)" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+        <path d="M38 57Q34 54 27 55Q31 60 38 57Z" fill="url(#lg)" opacity="0.85"/>
+        <path d="M30 56Q25 52 18 55Q23 59 30 56Z" fill="url(#lg)" opacity="0.8"/>
+        <!-- Laurel der -->
+        <path d="M82 55Q92 52 100 44" stroke="url(#lg)" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+        <path d="M82 55Q85 50 92 47Q89 54 82 55Z" fill="url(#lg)"/>
+        <path d="M85 52Q90 47 97 46Q93 52 85 52Z" fill="url(#lg)"/>
+        <path d="M89 49Q94 44 101 44Q97 50 89 49Z" fill="url(#lg)"/>
+        <path d="M82 57Q94 60 102 55" stroke="url(#lg)" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+        <path d="M82 57Q86 54 93 55Q89 60 82 57Z" fill="url(#lg)" opacity="0.85"/>
+        <path d="M90 56Q95 52 102 55Q97 59 90 56Z" fill="url(#lg)" opacity="0.8"/>
+        <!-- Nudo -->
+        <ellipse cx="60" cy="66" rx="4" ry="3" fill="url(#lg)"/>
+        <ellipse cx="60" cy="66" rx="2.5" ry="1.8" fill="#f0d97a"/>
+      </svg>
+    </div>
+    <div class="loader-bar"><div class="loader-progress"></div></div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════════════ -->
+  <header id="header" role="banner">
+    <nav class="nav" aria-label="Navegación principal">
+      <a href="#inicio" class="nav-logo" aria-label="Barberías Minerva — Inicio">
+        <svg class="nav-emblem" viewBox="0 0 120 80" fill="none" aria-hidden="true">
+          <defs>
+            <linearGradient id="nv" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#f0d97a"/>
+              <stop offset="50%" stop-color="#c8a84b"/>
+              <stop offset="100%" stop-color="#a07830"/>
+            </linearGradient>
+          </defs>
+          <path d="M48 24L48 31L72 31L72 24" fill="url(#nv)"/>
+          <path d="M48 24L46 17L50 22L53 14L53 24Z" fill="url(#nv)"/>
+          <path d="M53 24L53 14L57 9L61 14L61 24Z" fill="url(#nv)" opacity="0.9"/>
+          <path d="M61 24L61 14L65 22L69 17L72 24Z" fill="url(#nv)"/>
+          <ellipse cx="51" cy="29" rx="2" ry="2" fill="url(#nv)"/>
+          <ellipse cx="60" cy="29" rx="2" ry="2" fill="url(#nv)"/>
+          <ellipse cx="69" cy="29" rx="2" ry="2" fill="url(#nv)"/>
+          <path d="M38 63L38 38L42 38L60 57L78 38L82 38L82 63L78 63L78 46L62 62L58 62L42 46L42 63Z" fill="url(#nv)"/>
+          <path d="M38 55Q28 52 20 44" stroke="url(#nv)" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+          <path d="M38 55Q35 50 28 47Q31 54 38 55Z" fill="url(#nv)"/>
+          <path d="M35 52Q30 47 23 46Q27 52 35 52Z" fill="url(#nv)"/>
+          <path d="M31 49Q26 44 19 44Q23 50 31 49Z" fill="url(#nv)"/>
+          <path d="M82 55Q92 52 100 44" stroke="url(#nv)" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+          <path d="M82 55Q85 50 92 47Q89 54 82 55Z" fill="url(#nv)"/>
+          <path d="M85 52Q90 47 97 46Q93 52 85 52Z" fill="url(#nv)"/>
+          <path d="M89 49Q94 44 101 44Q97 50 89 49Z" fill="url(#nv)"/>
+          <ellipse cx="60" cy="66" rx="4" ry="3" fill="url(#nv)"/>
+        </svg>
+        <span class="nav-wordmark">
+          <span class="nav-word-top">Barberías</span>
+          <span class="nav-word-main">MINERVA</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu" role="list">
+        <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+        <li><a href="#servicios" class="nav-link">Servicios</a></li>
+        <li><a href="#experiencia" class="nav-link">Experiencia</a></li>
+        <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        <li>
+          <a href="https://wa.me/56933581705/?text=Hola%2C%20quiero%20consultar%20y%20agendar%20una%20hora%20en%20Barberias%20Minerva"
+             class="btn btn--gold btn--sm"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Agendar hora por WhatsApp">
+            Agenda tu hora
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ═══════════════════════════════════════════════
+         HERO
+    ═══════════════════════════════════════════════ -->
+    <section id="inicio" class="hero" aria-labelledby="hero-title">
+      <!-- Fondo visual con patrón + overlay -->
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-pattern"></div>
+        <div class="hero-overlay"></div>
+        <!-- Barber pole decorativo -->
+        <div class="hero-pole" aria-hidden="true">
+          <div class="pole-stripe"></div>
+          <div class="pole-cap pole-cap--top"></div>
+          <div class="pole-cap pole-cap--bottom"></div>
+        </div>
+      </div>
+
+      <!-- Partículas decorativas -->
+      <div class="hero-particles" aria-hidden="true">
+        <span class="particle" style="--x:15%;--y:20%;--s:6px;--d:0s"></span>
+        <span class="particle" style="--x:80%;--y:15%;--s:4px;--d:1.2s"></span>
+        <span class="particle" style="--x:60%;--y:75%;--s:5px;--d:0.6s"></span>
+        <span class="particle" style="--x:25%;--y:70%;--s:3px;--d:1.8s"></span>
+        <span class="particle" style="--x:90%;--y:60%;--s:4px;--d:0.4s"></span>
+        <span class="particle" style="--x:45%;--y:85%;--s:6px;--d:2.1s"></span>
+        <span class="particle" style="--x:70%;--y:30%;--s:3px;--d:1.0s"></span>
+        <span class="particle" style="--x:10%;--y:55%;--s:5px;--d:1.5s"></span>
+      </div>
+
+      <div class="hero-content container">
+        <!-- Eyebrow badge -->
+        <div class="hero-badge reveal" data-delay="0">
+          <span class="badge-dot"></span>
+          <span>Barbería & Spa Premium — La Serena, Chile</span>
+        </div>
+
+        <!-- Emblema grande -->
+        <div class="hero-emblem reveal" data-delay="100" aria-hidden="true">
+          <svg viewBox="0 0 460 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="hg" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#f0d97a"/>
+                <stop offset="40%" stop-color="#c8a84b"/>
+                <stop offset="100%" stop-color="#a07830"/>
+              </linearGradient>
+              <linearGradient id="hg2" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#f5e090"/>
+                <stop offset="100%" stop-color="#b89038"/>
+              </linearGradient>
+              <radialGradient id="hgc" cx="50%" cy="40%" r="50%">
+                <stop offset="0%" stop-color="#f5e090"/>
+                <stop offset="100%" stop-color="#c8a84b"/>
+              </radialGradient>
+              <filter id="hglow">
+                <feGaussianBlur stdDeviation="3" result="b"/>
+                <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+              </filter>
+            </defs>
+            <path d="M185 95L185 118L275 118L275 95" fill="url(#hg)" filter="url(#hglow)"/>
+            <path d="M185 95L178 68L195 85L207 55L207 95Z" fill="url(#hg)"/>
+            <path d="M207 95L207 55L220 38L233 55L233 95Z" fill="url(#hgc)" filter="url(#hglow)"/>
+            <path d="M220 38L228 18L236 38" fill="url(#hgc)"/>
+            <ellipse cx="230" cy="14" rx="5" ry="7" fill="url(#hgc)"/>
+            <path d="M233 95L233 55L246 38L259 55L259 95Z" fill="url(#hg)"/>
+            <path d="M259 95L259 55L271 85L282 68L275 95Z" fill="url(#hg)"/>
+            <ellipse cx="193" cy="112" rx="5" ry="5" fill="url(#hg2)"/>
+            <ellipse cx="213" cy="112" rx="5" ry="5" fill="url(#hg2)"/>
+            <ellipse cx="230" cy="112" rx="5" ry="5" fill="url(#hg2)"/>
+            <ellipse cx="247" cy="112" rx="5" ry="5" fill="url(#hg2)"/>
+            <ellipse cx="267" cy="112" rx="5" ry="5" fill="url(#hg2)"/>
+            <rect x="183" y="94" width="94" height="3" rx="1.5" fill="url(#hg2)"/>
+            <rect x="183" y="118" width="94" height="2" rx="1" fill="url(#hg)"/>
+            <path d="M148 240L148 148L162 148L230 218L298 148L312 148L312 240L296 240L296 178L238 238L222 238L164 178L164 240Z" fill="url(#hg)" filter="url(#hglow)"/>
+            <rect x="140" y="236" width="24" height="5" rx="2" fill="url(#hg2)"/>
+            <rect x="296" y="236" width="24" height="5" rx="2" fill="url(#hg2)"/>
+            <rect x="140" y="144" width="22" height="5" rx="2" fill="url(#hg2)"/>
+            <rect x="298" y="144" width="22" height="5" rx="2" fill="url(#hg2)"/>
+            <path d="M148 215Q115 205 88 180" stroke="url(#hg)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+            <path d="M148 215Q138 198 120 190Q128 208 148 215Z" fill="url(#hg)"/>
+            <path d="M140 206Q126 192 108 188Q118 204 140 206Z" fill="url(#hg)"/>
+            <path d="M132 197Q116 186 98 185Q110 198 132 197Z" fill="url(#hg)"/>
+            <path d="M122 188Q106 178 88 180Q102 191 122 188Z" fill="url(#hg)"/>
+            <path d="M112 180Q98 172 82 176Q96 185 112 180Z" fill="url(#hg)"/>
+            <path d="M148 225Q110 230 80 215" stroke="url(#hg)" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <path d="M148 225Q134 215 116 218Q128 230 148 225Z" fill="url(#hg2)" opacity="0.85"/>
+            <path d="M130 222Q116 212 98 218Q112 228 130 222Z" fill="url(#hg2)" opacity="0.85"/>
+            <path d="M312 215Q345 205 372 180" stroke="url(#hg)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+            <path d="M312 215Q322 198 340 190Q332 208 312 215Z" fill="url(#hg)"/>
+            <path d="M320 206Q334 192 352 188Q342 204 320 206Z" fill="url(#hg)"/>
+            <path d="M328 197Q344 186 362 185Q350 198 328 197Z" fill="url(#hg)"/>
+            <path d="M338 188Q354 178 372 180Q358 191 338 188Z" fill="url(#hg)"/>
+            <path d="M348 180Q362 172 378 176Q364 185 348 180Z" fill="url(#hg)"/>
+            <path d="M312 225Q350 230 380 215" stroke="url(#hg)" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <path d="M312 225Q326 215 344 218Q332 230 312 225Z" fill="url(#hg2)" opacity="0.85"/>
+            <path d="M330 222Q344 212 362 218Q348 228 330 222Z" fill="url(#hg2)" opacity="0.85"/>
+            <ellipse cx="230" cy="248" rx="12" ry="8" fill="url(#hg)"/>
+            <ellipse cx="230" cy="248" rx="7" ry="4.5" fill="url(#hg2)"/>
+            <path d="M165 248Q185 252 218 248" stroke="url(#hg)" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.7"/>
+            <path d="M242 248Q258 252 295 248" stroke="url(#hg)" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.7"/>
+          </svg>
+        </div>
+
+        <!-- Headline -->
+        <h1 id="hero-title" class="hero-title reveal" data-delay="200">
+          <span class="hero-title-sub">Tu mejor versión,</span>
+          <span class="hero-title-main">nuestra<br><em>especialidad.</em></span>
+        </h1>
+
+        <p class="hero-lead reveal" data-delay="300">
+          Corte de precisión, tratamientos premium y una experiencia diseñada para que salgas diferente. Abiertos para toda la familia.
+        </p>
+
+        <!-- CTAs -->
+        <div class="hero-ctas reveal" data-delay="400">
+          <a href="https://wa.me/56933581705/?text=Hola%2C%20quiero%20agendar%20mi%20hora%20en%20Barberias%20Minerva"
+             class="btn btn--gold btn--lg btn--pulse"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Agendar hora en WhatsApp">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+            </svg>
+            Agenda tu hora
+          </a>
+          <a href="#servicios" class="btn btn--outline btn--lg">
+            Ver servicios
+          </a>
+        </div>
+
+        <!-- Stats rápidos -->
+        <div class="hero-stats reveal" data-delay="500">
+          <div class="hero-stat">
+            <span class="stat-val">7</span>
+            <span class="stat-label">Días a la semana</span>
+          </div>
+          <div class="hero-stat-divider" aria-hidden="true"></div>
+          <div class="hero-stat">
+            <span class="stat-val">+5★</span>
+            <span class="stat-label">Calificación</span>
+          </div>
+          <div class="hero-stat-divider" aria-hidden="true"></div>
+          <div class="hero-stat">
+            <span class="stat-val">100%</span>
+            <span class="stat-label">Profesionales</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="hero-scroll" aria-hidden="true">
+        <span class="scroll-line"></span>
+        <span class="scroll-text">scroll</span>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         NOSOTROS / IDENTIDAD
+    ═══════════════════════════════════════════════ -->
+    <section id="nosotros" class="section about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="about-grid">
+          <!-- Visual lado izquierdo -->
+          <div class="about-visual reveal" data-delay="0">
+            <div class="about-card-main">
+              <div class="about-img-placeholder">
+                <div class="placeholder-inner">
+                  <svg viewBox="0 0 460 300" fill="none" class="about-emblem" aria-hidden="true">
+                    <defs>
+                      <linearGradient id="ag" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" stop-color="#f0d97a"/>
+                        <stop offset="50%" stop-color="#c8a84b"/>
+                        <stop offset="100%" stop-color="#a07830"/>
+                      </linearGradient>
+                    </defs>
+                    <path d="M185 95L185 118L275 118L275 95" fill="url(#ag)"/>
+                    <path d="M185 95L178 68L195 85L207 55L207 95Z" fill="url(#ag)"/>
+                    <path d="M207 95L207 55L220 38L233 55L233 95Z" fill="url(#ag)" opacity="0.9"/>
+                    <path d="M220 38L228 18L236 38" fill="url(#ag)"/>
+                    <ellipse cx="230" cy="14" rx="5" ry="7" fill="url(#ag)"/>
+                    <path d="M233 95L233 55L246 38L259 55L259 95Z" fill="url(#ag)"/>
+                    <path d="M259 95L259 55L271 85L282 68L275 95Z" fill="url(#ag)"/>
+                    <ellipse cx="193" cy="112" rx="5" ry="5" fill="#f0d97a"/><ellipse cx="213" cy="112" rx="5" ry="5" fill="#f0d97a"/><ellipse cx="230" cy="112" rx="5" ry="5" fill="#f0d97a"/><ellipse cx="247" cy="112" rx="5" ry="5" fill="#f0d97a"/><ellipse cx="267" cy="112" rx="5" ry="5" fill="#f0d97a"/>
+                    <path d="M148 240L148 148L162 148L230 218L298 148L312 148L312 240L296 240L296 178L238 238L222 238L164 178L164 240Z" fill="url(#ag)"/>
+                    <rect x="140" y="236" width="24" height="5" rx="2" fill="#f0d97a"/><rect x="296" y="236" width="24" height="5" rx="2" fill="#f0d97a"/>
+                    <rect x="140" y="144" width="22" height="5" rx="2" fill="#f0d97a"/><rect x="298" y="144" width="22" height="5" rx="2" fill="#f0d97a"/>
+                    <path d="M148 215Q115 205 88 180" stroke="url(#ag)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                    <path d="M148 215Q138 198 120 190Q128 208 148 215Z" fill="url(#ag)"/>
+                    <path d="M140 206Q126 192 108 188Q118 204 140 206Z" fill="url(#ag)"/>
+                    <path d="M132 197Q116 186 98 185Q110 198 132 197Z" fill="url(#ag)"/>
+                    <path d="M122 188Q106 178 88 180Q102 191 122 188Z" fill="url(#ag)"/>
+                    <path d="M148 225Q110 230 80 215" stroke="url(#ag)" stroke-width="2" fill="none" stroke-linecap="round"/>
+                    <path d="M148 225Q134 215 116 218Q128 230 148 225Z" fill="url(#ag)" opacity="0.85"/>
+                    <path d="M312 215Q345 205 372 180" stroke="url(#ag)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                    <path d="M312 215Q322 198 340 190Q332 208 312 215Z" fill="url(#ag)"/>
+                    <path d="M320 206Q334 192 352 188Q342 204 320 206Z" fill="url(#ag)"/>
+                    <path d="M328 197Q344 186 362 185Q350 198 328 197Z" fill="url(#ag)"/>
+                    <path d="M338 188Q354 178 372 180Q358 191 338 188Z" fill="url(#ag)"/>
+                    <path d="M312 225Q350 230 380 215" stroke="url(#ag)" stroke-width="2" fill="none" stroke-linecap="round"/>
+                    <path d="M312 225Q326 215 344 218Q332 230 312 225Z" fill="url(#ag)" opacity="0.85"/>
+                    <path d="M330 222Q344 212 362 218Q348 228 330 222Z" fill="url(#ag)" opacity="0.85"/>
+                    <ellipse cx="230" cy="248" rx="12" ry="8" fill="url(#ag)"/>
+                    <ellipse cx="230" cy="248" rx="7" ry="4.5" fill="#f0d97a"/>
+                  </svg>
+                  <div class="placeholder-label">
+                    <span class="ph-name">BARBERÍAS</span>
+                    <span class="ph-brand">MINERVA</span>
+                    <span class="ph-spa">SPA</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Floating badge -->
+              <div class="about-badge-float">
+                <span class="badge-num">1+</span>
+                <span class="badge-text">año<br>de historia</span>
+              </div>
+            </div>
+            <!-- Cards laterales pequeñas -->
+            <div class="about-cards-mini">
+              <div class="about-mini-card">
+                <span class="mini-icon">✂️</span>
+                <span class="mini-label">Corte Premium</span>
+              </div>
+              <div class="about-mini-card">
+                <span class="mini-icon">🪒</span>
+                <span class="mini-label">Afeitado Clásico</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Texto lado derecho -->
+          <div class="about-text reveal" data-delay="150">
+            <div class="section-eyebrow">Quiénes somos</div>
+            <h2 id="about-title" class="section-title">
+              Más que una barbería.<br>
+              <em>Una experiencia.</em>
+            </h2>
+            <p class="body-text">
+              En Barberías Minerva somos un equipo apasionado por el arte del corte, la precisión del detalle y la construcción de una identidad que va más allá del espejo. Nuestro espacio está pensado para que cada cliente —sin importar la edad— viva una experiencia que lo haga sentir bien desde que entra hasta que sale.
+            </p>
+            <p class="body-text">
+              Combinamos técnicas modernas con el ritual clásico de la barbería, en un ambiente que transmite confianza, carácter y estilo. No cortamos solo el pelo: ayudamos a construir la versión que quieres mostrarle al mundo.
+            </p>
+
+            <div class="about-values">
+              <div class="value-item">
+                <div class="value-icon" aria-hidden="true">◆</div>
+                <div>
+                  <strong>Excelencia técnica</strong>
+                  <p>Barberos certificados y en formación continua.</p>
+                </div>
+              </div>
+              <div class="value-item">
+                <div class="value-icon" aria-hidden="true">◆</div>
+                <div>
+                  <strong>Ambiente familiar</strong>
+                  <p>Espacio acogedor para adultos y niños por igual.</p>
+                </div>
+              </div>
+              <div class="value-item">
+                <div class="value-icon" aria-hidden="true">◆</div>
+                <div>
+                  <strong>Identidad de marca</strong>
+                  <p>Diseño, detalle y presencia en cada servicio.</p>
+                </div>
+              </div>
+            </div>
+
+            <a href="https://wa.me/56933581705/?text=Hola%2C%20quiero%20conocer%20m%C3%A1s%20sobre%20Barberias%20Minerva"
+               class="btn btn--gold"
+               target="_blank" rel="noopener noreferrer">
+              Consultar por WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         SERVICIOS
+    ═══════════════════════════════════════════════ -->
+    <section id="servicios" class="section services" aria-labelledby="services-title">
+      <div class="services-bg" aria-hidden="true">
+        <div class="services-pattern"></div>
+        <div class="services-glow services-glow--1"></div>
+        <div class="services-glow services-glow--2"></div>
+      </div>
+      <div class="container">
+        <div class="section-header reveal" data-delay="0">
+          <div class="section-eyebrow">Nuestros servicios</div>
+          <h2 id="services-title" class="section-title">
+            Elige tu<br><em>experiencia</em>
+          </h2>
+          <p class="section-lead">Cada servicio es un ritual. Sin apuros, sin medias tintas.</p>
+        </div>
+
+        <div class="services-grid">
+
+          <!-- Servicio SIGNATURE -->
+          <article class="service-card service-card--featured reveal" data-delay="0" aria-labelledby="svc-signature">
+            <div class="service-card-glow" aria-hidden="true"></div>
+            <div class="service-badge">Premier</div>
+            <div class="service-icon" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+                <path d="M6 30L6 6L11 6L18 20L25 6L30 6L30 30L25 30L25 14L20 26L16 26L11 14L11 30Z" fill="#c8a84b"/>
+                <path d="M2 30L34 30" stroke="#c8a84b" stroke-width="1.5" opacity="0.4"/>
+              </svg>
+            </div>
+            <div class="service-tag">The Gentleman's Choice</div>
+            <h3 id="svc-signature" class="service-name">SIGNATURE</h3>
+            <p class="service-desc">El ritual completo del caballero moderno. Degradado de precisión artesanal, tratamiento facial de alto nivel y perfilación de cejas de cortesía.</p>
+            <ul class="service-includes" aria-label="Incluye">
+              <li><span class="inc-dot" aria-hidden="true"></span>Fade profesional de precisión</li>
+              <li><span class="inc-dot" aria-hidden="true"></span>Máscara Black Facial Premium</li>
+              <li><span class="inc-dot" aria-hidden="true"></span>Perfilación de cejas (cortesía)</li>
+            </ul>
+            <div class="service-meta">
+              <span class="service-time">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                40 min
+              </span>
+            </div>
+            <a href="https://wa.me/56933581705/?text=Hola%2C%20quiero%20reservar%20el%20servicio%20SIGNATURE%20en%20Barberias%20Minerva"
+               class="btn btn--gold service-cta"
+               target="_blank" rel="noopener noreferrer">
+              Reservar SIGNATURE
+            </a>
+          </article>
+
+          <!-- Servicio CLASSIC -->
+          <article class="service-card reveal" data-delay="100" aria-labelledby="svc-classic">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+                <path d="M8 8L8 28L12 28L12 20L20 20L20 28L24 28L24 8L20 8L20 16L12 16L12 8Z" fill="#c8a84b"/>
+                <path d="M2 28L34 28" stroke="#c8a84b" stroke-width="1.5" opacity="0.4"/>
+              </svg>
+            </div>
+            <div class="service-tag">The Minerva Cut</div>
+            <h3 id="svc-classic" class="service-name">CLASSIC</h3>
+            <p class="service-desc">Corte artesanal de caballero con la firma Minerva. Técnica de precisión, acabado impecable y perfilación incluida como cortesía de la casa.</p>
+            <ul class="service-includes" aria-label="Incluye">
+              <li><span class="inc-dot" aria-hidden="true"></span>Corte de cabello artesanal</li>
+              <li><span class="inc-dot" aria-hidden="true"></span>Perfilación de cejas (cortesía)</li>
+            </ul>
+            <div class="service-meta">
+              <span class="service-time">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                30 min
+              </span>
+            </div>
+            <a href="https://wa.me/56933581705/?text=Hola%2C%20quiero%20reservar%20el%20servicio%20CLASSIC%20en%20Barberias%20Minerva"
+               class="btn btn--outline service-cta"
+               target="_blank" rel="noopener noreferrer">
+              Reservar CLASSIC
+            </a>
+          </article>
+
+          <!-- Servicio INFANTIL -->
+          <article class="service-card service-card--kids reveal" data-delay="200" aria-labelledby="svc-kids">
+            <div class="service-badge service-badge--new">Nuevo</div>
+            <div class="service-icon" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+                <circle cx="18" cy="10" r="5" stroke="#c8a84b" stroke-width="2" fill="none"/>
+                <path d="M10 28C10 23.5 13.5 20 18 20C22.5 20 26 23.5 26 28" stroke="#c8a84b" stroke-width="2" fill="none" stroke-linecap="round"/>
+                <path d="M6 30L30 30" stroke="#c8a84b" stroke-width="1.5" opacity="0.4"/>
+                <path d="M14 8C12 7 10 9 12 11" stroke="#c8a84b" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                <path d="M22 8C24 7 26 9 24 11" stroke="#c8a84b" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="service-tag">Kids Experience</div>
+            <h3 id="svc-kids" class="service-name">INFANTIL</h3>
+            <p class="service-desc">Una experiencia diseñada especialmente para los más pequeños. Sillón temático, ambiente divertido y un equipo entrenado en hacer del corte una aventura, no un susto.</p>
+            <ul class="service-includes" aria-label="Incluye">
+              <li><span class="inc-dot" aria-hidden="true"></span>Corte infantil especializado</li>
+              <li><span class="inc-dot" aria-hidden="true"></span>Sillón temático exclusivo</li>
+              <li><span class="inc-dot" aria-hidden="true"></span>Zona de entretenimiento</li>
+            </ul>
+            <div class="service-kids-note">
+              <span>🎮</span> Zona de espera con entretenimiento incluida
+            </div>
+            <a href="https://wa.me/56933581705/?text=Hola%2C%20quiero%20reservar%20el%20servicio%20Infantil%20en%20Barberias%20Minerva"
+               class="btn btn--outline service-cta"
+               target="_blank" rel="noopener noreferrer">
+              Reservar turno infantil
+            </a>
+          </article>
+
+        </div>
+
+        <!-- CTA bottom servicios -->
+        <div class="services-cta reveal" data-delay="300">
+          <p>¿Tienes dudas sobre qué servicio elegir? Consúltanos directo.</p>
+          <a href="https://wa.me/56933581705/?text=Hola%2C%20necesito%20ayuda%20para%20elegir%20un%20servicio%20en%20Barberias%20Minerva"
+             class="btn btn--gold"
+             target="_blank" rel="noopener noreferrer">
+            Consultar por WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         EXPERIENCIA / DIFERENCIALES
+    ═══════════════════════════════════════════════ -->
+    <section id="experiencia" class="section experience" aria-labelledby="exp-title">
+      <div class="container">
+        <div class="section-header reveal" data-delay="0">
+          <div class="section-eyebrow">Por qué elegirnos</div>
+          <h2 id="exp-title" class="section-title">La diferencia<br><em>Minerva</em></h2>
+        </div>
+
+        <div class="exp-grid">
+          <div class="exp-card reveal" data-delay="0">
+            <div class="exp-num" aria-hidden="true">01</div>
+            <div class="exp-icon" aria-hidden="true">✂️</div>
+            <h3>Precisión artesanal</h3>
+            <p>Cada corte es ejecutado con técnica depurada y atención al milímetro. No hay atajos en nuestro proceso.</p>
+          </div>
+          <div class="exp-card reveal" data-delay="80">
+            <div class="exp-num" aria-hidden="true">02</div>
+            <div class="exp-icon" aria-hidden="true">👶</div>
+            <h3>Espacio infantil único</h3>
+            <p>Sillón temático, zona de entretenimiento y barberos especializados en hacer del primer corte una experiencia que los niños piden repetir.</p>
+          </div>
+          <div class="exp-card reveal" data-delay="160">
+            <div class="exp-num" aria-hidden="true">03</div>
+            <div class="exp-icon" aria-hidden="true">🏆</div>
+            <h3>Estándares premium</h3>
+            <p>Productos de alta gama, higiene certificada y una presentación del espacio que refleja el nivel de cada servicio.</p>
+          </div>
+          <div class="exp-card reveal" data-delay="240">
+            <div class="exp-num" aria-hidden="true">04</div>
+            <div class="exp-icon" aria-hidden="true">🗓️</div>
+            <h3>7 días disponibles</h3>
+            <p>Lunes a viernes de 10:00 a 20:00. Sábado y domingo de 10:00 a 21:00. Siempre hay un espacio para ti.</p>
+          </div>
+          <div class="exp-card reveal" data-delay="320">
+            <div class="exp-num" aria-hidden="true">05</div>
+            <div class="exp-icon" aria-hidden="true">💬</div>
+            <h3>Atención directa</h3>
+            <p>Sin turnos por app ni esperas largas. Contáctanos por WhatsApp y coordinamos en minutos.</p>
+          </div>
+          <div class="exp-card reveal" data-delay="400">
+            <div class="exp-num" aria-hidden="true">06</div>
+            <div class="exp-icon" aria-hidden="true">👨‍👦</div>
+            <h3>Familia completa</h3>
+            <p>Papá e hijo atendidos en el mismo lugar. El modelo que las familias de La Serena estaban esperando.</p>
+          </div>
+        </div>
+
+        <!-- Horarios -->
+        <div class="hours-block reveal" data-delay="100">
+          <h3 class="hours-title">Horarios de atención</h3>
+          <div class="hours-grid">
+            <div class="hours-item">
+              <span class="hours-days">Lunes — Viernes</span>
+              <span class="hours-time">10:00 — 20:00</span>
+            </div>
+            <div class="hours-separator" aria-hidden="true">◆</div>
+            <div class="hours-item">
+              <span class="hours-days">Sábado — Domingo</span>
+              <span class="hours-time">10:00 — 21:00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         CTA INTERMEDIO — BANNER
+    ═══════════════════════════════════════════════ -->
+    <section class="cta-banner" aria-label="Llamado a la acción">
+      <div class="cta-banner-bg" aria-hidden="true">
+        <div class="cta-banner-pattern"></div>
+        <div class="cta-banner-glow"></div>
+      </div>
+      <div class="container">
+        <div class="cta-banner-content reveal" data-delay="0">
+          <div class="cta-banner-emblem" aria-hidden="true">◆</div>
+          <h2 class="cta-banner-title">
+            ¿Listo para<br><em>tu cambio?</em>
+          </h2>
+          <p class="cta-banner-sub">
+            Agenda ahora y vive la diferencia Minerva. Respuesta inmediata, sin costo adicional.
+          </p>
+          <a href="https://wa.me/56933581705/?text=Hola%2C%20quiero%20agendar%20mi%20hora%20en%20Barberias%20Minerva"
+             class="btn btn--gold btn--lg btn--pulse"
+             target="_blank" rel="noopener noreferrer">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+            </svg>
+            Agendar por WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         CONTACTO + MAPA
+    ═══════════════════════════════════════════════ -->
+    <section id="contacto" class="section contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section-header reveal" data-delay="0">
+          <div class="section-eyebrow">Encuéntranos</div>
+          <h2 id="contact-title" class="section-title">
+            Dónde<br><em>estamos</em>
+          </h2>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Info contacto -->
+          <div class="contact-info reveal" data-delay="0">
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <strong>Ubicación</strong>
+                <p>La Serena, Región de Coquimbo, Chile</p>
+                <p class="contact-note"><!-- Dirección exacta: insertar aquí --></p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                </svg>
+              </div>
+              <div>
+                <strong>WhatsApp</strong>
+                <p>+569 3358 1705</p>
+                <a href="https://wa.me/56933581705/?text=Hola%2C%20quiero%20consultar%20sobre%20Barberias%20Minerva"
+                   class="contact-link"
+                   target="_blank" rel="noopener noreferrer">
+                  Escribir ahora →
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div>
+                <strong>Horarios</strong>
+                <p>Lun – Vie: 10:00 – 20:00</p>
+                <p>Sáb – Dom: 10:00 – 21:00</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </div>
+              <div>
+                <strong>Instagram</strong>
+                <p>@barberiasminerva</p>
+              </div>
+            </div>
+
+            <a href="https://wa.me/56933581705/?text=Hola%2C%20quiero%20agendar%20mi%20hora%20en%20Barberias%20Minerva"
+               class="btn btn--gold contact-wa-btn"
+               target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+              </svg>
+              Agendar mi hora ahora
+            </a>
+          </div>
+
+          <!-- Mapa embed -->
+          <div class="contact-map reveal" data-delay="150">
+            <div class="map-wrapper">
+              <!-- 
+                INSTRUCCIÓN: Reemplaza este bloque por el embed de Google Maps.
+                Pasos:
+                1. Ve a Google Maps y busca tu dirección exacta.
+                2. Haz clic en "Compartir" > "Insertar un mapa".
+                3. Copia el código <iframe...> y reemplaza el contenido de este div.
+                Mientras tanto, se muestra un placeholder visual.
+              -->
+              <div class="map-placeholder">
+                <div class="map-placeholder-inner">
+                  <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#c8a84b" stroke-width="1.5" aria-hidden="true">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                  </svg>
+                  <p>Barberías Minerva</p>
+                  <p class="map-ph-sub">La Serena, Chile</p>
+                  <p class="map-ph-note">[ Insertar embed de Google Maps aquí ]</p>
+                </div>
+              </div>
+              <!-- Fin placeholder — descomentar iframe cuando tengas dirección exacta:
+              <iframe 
+                src="TU_URL_DE_GOOGLE_MAPS_EMBED"
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Ubicación Barberías Minerva">
+              </iframe>
+              -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         CTA FINAL
+    ═══════════════════════════════════════════════ -->
+    <section class="cta-final" aria-label="Reserva final">
+      <div class="cta-final-bg" aria-hidden="true">
+        <div class="cta-final-pattern"></div>
+        <div class="cta-final-roman" aria-hidden="true">M</div>
+      </div>
+      <div class="container">
+        <div class="cta-final-content reveal" data-delay="0">
+          <div class="cta-final-emblem" aria-hidden="true">
+            <svg viewBox="0 0 460 300" fill="none" width="200">
+              <defs>
+                <linearGradient id="fg" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stop-color="#f0d97a"/>
+                  <stop offset="50%" stop-color="#c8a84b"/>
+                  <stop offset="100%" stop-color="#a07830"/>
+                </linearGradient>
+              </defs>
+              <path d="M185 95L185 118L275 118L275 95" fill="url(#fg)"/>
+              <path d="M185 95L178 68L195 85L207 55L207 95Z" fill="url(#fg)"/>
+              <path d="M207 95L207 55L220 38L233 55L233 95Z" fill="url(#fg)" opacity="0.9"/>
+              <path d="M220 38L228 18L236 38" fill="url(#fg)"/>
+              <ellipse cx="230" cy="14" rx="5" ry="7" fill="url(#fg)"/>
+              <path d="M233 95L233 55L246 38L259 55L259 95Z" fill="url(#fg)"/>
+              <path d="M259 95L259 55L271 85L282 68L275 95Z" fill="url(#fg)"/>
+              <ellipse cx="193" cy="112" rx="5" ry="5" fill="#f0d97a"/><ellipse cx="213" cy="112" rx="5" ry="5" fill="#f0d97a"/><ellipse cx="230" cy="112" rx="5" ry="5" fill="#f0d97a"/><ellipse cx="247" cy="112" rx="5" ry="5" fill="#f0d97a"/><ellipse cx="267" cy="112" rx="5" ry="5" fill="#f0d97a"/>
+              <path d="M148 240L148 148L162 148L230 218L298 148L312 148L312 240L296 240L296 178L238 238L222 238L164 178L164 240Z" fill="url(#fg)"/>
+              <rect x="140" y="236" width="24" height="5" rx="2" fill="#f0d97a"/><rect x="296" y="236" width="24" height="5" rx="2" fill="#f0d97a"/>
+              <rect x="140" y="144" width="22" height="5" rx="2" fill="#f0d97a"/><rect x="298" y="144" width="22" height="5" rx="2" fill="#f0d97a"/>
+              <path d="M148 215Q115 205 88 180" stroke="url(#fg)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+              <path d="M148 215Q138 198 120 190Q128 208 148 215Z" fill="url(#fg)"/>
+              <path d="M140 206Q126 192 108 188Q118 204 140 206Z" fill="url(#fg)"/>
+              <path d="M132 197Q116 186 98 185Q110 198 132 197Z" fill="url(#fg)"/>
+              <path d="M122 188Q106 178 88 180Q102 191 122 188Z" fill="url(#fg)"/>
+              <path d="M312 215Q345 205 372 180" stroke="url(#fg)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+              <path d="M312 215Q322 198 340 190Q332 208 312 215Z" fill="url(#fg)"/>
+              <path d="M320 206Q334 192 352 188Q342 204 320 206Z" fill="url(#fg)"/>
+              <path d="M328 197Q344 186 362 185Q350 198 328 197Z" fill="url(#fg)"/>
+              <path d="M338 188Q354 178 372 180Q358 191 338 188Z" fill="url(#fg)"/>
+              <ellipse cx="230" cy="248" rx="12" ry="8" fill="url(#fg)"/>
+              <ellipse cx="230" cy="248" rx="7" ry="4.5" fill="#f0d97a"/>
+            </svg>
+          </div>
+          <h2 class="cta-final-title">
+            No cualquiera.<br><em>El indicado.</em>
+          </h2>
+          <p class="cta-final-sub">
+            Ese es el estándar Minerva. Para clientes que valoran la diferencia.
+          </p>
+          <div class="cta-final-btns">
+            <a href="https://wa.me/56933581705/?text=Hola%2C%20quiero%20agendar%20mi%20hora%20en%20Barberias%20Minerva"
+               class="btn btn--gold btn--lg btn--pulse"
+               target="_blank" rel="noopener noreferrer">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+              </svg>
+              Agendar ahora
+            </a>
+            <a href="tel:+56933581705" class="btn btn--outline btn--lg">
+              Llamar directamente
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <svg viewBox="0 0 120 80" fill="none" width="80" aria-hidden="true">
+                <defs>
+                  <linearGradient id="ftg" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="#f0d97a"/>
+                    <stop offset="50%" stop-color="#c8a84b"/>
+                    <stop offset="100%" stop-color="#a07830"/>
+                  </linearGradient>
+                </defs>
+                <path d="M48 24L48 31L72 31L72 24" fill="url(#ftg)"/>
+                <path d="M48 24L46 17L50 22L53 14L53 24Z" fill="url(#ftg)"/>
+                <path d="M53 24L53 14L57 9L61 14L61 24Z" fill="url(#ftg)" opacity="0.9"/>
+                <path d="M61 24L61 14L65 22L69 17L72 24Z" fill="url(#ftg)"/>
+                <ellipse cx="60" cy="29" rx="2" ry="2" fill="url(#ftg)"/>
+                <path d="M38 63L38 38L42 38L60 57L78 38L82 38L82 63L78 63L78 46L62 62L58 62L42 46L42 63Z" fill="url(#ftg)"/>
+                <path d="M38 55Q28 52 20 44" stroke="url(#ftg)" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                <path d="M38 55Q35 50 28 47Q31 54 38 55Z" fill="url(#ftg)"/>
+                <path d="M35 52Q30 47 23 46Q27 52 35 52Z" fill="url(#ftg)"/>
+                <path d="M82 55Q92 52 100 44" stroke="url(#ftg)" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                <path d="M82 55Q85 50 92 47Q89 54 82 55Z" fill="url(#ftg)"/>
+                <path d="M85 52Q90 47 97 46Q93 52 85 52Z" fill="url(#ftg)"/>
+                <ellipse cx="60" cy="66" rx="4" ry="3" fill="url(#ftg)"/>
+              </svg>
+              <div class="footer-wordmark">
+                <span>Barberías</span>
+                <strong>MINERVA</strong>
+                <span>Spa</span>
+              </div>
+            </div>
+            <p class="footer-tagline">Excelencia · Estilo · Confianza</p>
+          </div>
+
+          <div class="footer-nav">
+            <h4>Navegación</h4>
+            <ul>
+              <li><a href="#inicio">Inicio</a></li>
+              <li><a href="#nosotros">Nosotros</a></li>
+              <li><a href="#servicios">Servicios</a></li>
+              <li><a href="#experiencia">Experiencia</a></li>
+              <li><a href="#contacto">Contacto</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-services">
+            <h4>Servicios</h4>
+            <ul>
+              <li>SIGNATURE — The Gentleman's Choice</li>
+              <li>CLASSIC — The Minerva Cut</li>
+              <li>Servicio Infantil</li>
+            </ul>
+          </div>
+
+          <div class="footer-contact">
+            <h4>Contacto</h4>
+            <p>+569 3358 1705</p>
+            <p>@barberiasminerva</p>
+            <p>La Serena, Chile</p>
+            <a href="https://wa.me/56933581705/?text=Hola%2C%20quiero%20agendar%20en%20Barberias%20Minerva"
+               class="btn btn--gold btn--sm footer-wa"
+               target="_blank" rel="noopener noreferrer">
+              Agendar ahora
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="footer-copy">© 2026 Barberías Minerva. Todos los derechos reservados.</p>
+        <p class="footer-credits">Diseño & Desarrollo — FF Studio</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════════
+       STICKY WhatsApp BUTTON (mobile)
+  ═══════════════════════════════════════════════ -->
+  <a href="https://wa.me/56933581705/?text=Hola%2C%20quiero%20agendar%20en%20Barberias%20Minerva"
+     class="wa-sticky"
+     target="_blank" rel="noopener noreferrer"
+     aria-label="Contactar por WhatsApp"
+     id="waSticky">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+    </svg>
+    <span class="wa-sticky-label">Agenda</span>
+  </a>
+
+  <!-- Back to top -->
+  <button class="back-top" id="backTop" aria-label="Volver al inicio">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15"/>
+    </svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
